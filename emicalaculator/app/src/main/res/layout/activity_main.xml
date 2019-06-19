@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <!--Three Inputs-->
+
+       <!-- 1-Principal-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/principal_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:digits="0123456789."
+                android:hint="@string/principal" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--2-Interest-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/interest_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:hint="@string/interest" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--3-Duration-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/years_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:digits="0123456789."
+                android:hint="@string/duration" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_calculate"
+            android:text="calculate"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="40dp"
+            android:background='@color/colorPrimary'
+            />
+
+
+        <!--Now time for output-->
+
+        <!--1-EMI-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emi_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/emi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:digits="0123456789."
+                android:hint="@string/emi" />
+
+        </android.support.design.widget.TextInputLayout>
+
+       <!-- 2-TotalInterest-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/total_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/interest_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:digits="0123456789."
+                android:hint="@string/total_interest" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

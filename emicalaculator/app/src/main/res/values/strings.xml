@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Loan Calculator</string>
+    <string name="principal">Purchase Price ($) </string>
+    <string name="interest">Interest (%) </string>
+    <string name="duration">Loan Term (Years) </string>
+    <string name="emi">Monthly Payment ($)</string>
+    <string name="total_interest">Total Cost ($)</string>
+</resources>
